@@ -60,4 +60,5 @@ if (
 console.log(`Öppet just nu: ${isOpen}`);
 
 // STEG 7 ------------------------------------------------------------
-// TODO: se README. Gissa först, kör sedan.
+// @ts-expect-error
+console.log("5" + 3, "5" - 3, true + 1, 0.1 + 0.2, "" === 0, null == undefined);
