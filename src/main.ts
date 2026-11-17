@@ -1,4 +1,4 @@
-import './kalibrering'
+// import './kalibrering'
 
 // Dag 1: Variabler, typer och villkor. Följ README.md steg för steg.
 // Resultatet syns i Console (F12). Spara, så laddas sidan om av sig själv.
@@ -6,19 +6,35 @@ import './kalibrering'
 
 // STEG 1 ------------------------------------------------------------
 // TODO: skriv ut texten "Hej från Kafé Kardemumma" med console.log
+console.log('Hej från Kafé Kardemumma');
 
 // STEG 2 ------------------------------------------------------------
 // TODO: skapa konstanten kafeNamn (string) med värdet "Kafé Kardemumma"
 // TODO: skapa konstanterna prisBulle (number, 35) och prisKaffe (number, 32)
 // TODO: skapa variablerna antalBullar (2) och antalKaffe (1) med let, båda number
 // TODO: skriv ut kafeNamn
-//       Skriv typen själv, till exempel:  const kafeNamn: string = "..."
+
+const kafeNamn: string = 'Kafé Kardemumma';
+const prisBulle: number = 35;
+const prisKaffe: number = 32;
+let antalBullar: number = 2;
+let antalKaffe: number = 1;
+console.log(kafeNamn);
+// prisBulle = 20;
 
 // STEG 3 ------------------------------------------------------------
 // TODO: skapa en string, ett number, en boolean, en undefined och en null
-//       Typerna heter string, number, boolean, undefined och null
 // TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
 // TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
+
+let str: string = 'some text';
+let num: number = 123;
+let bln: boolean = true;
+let x: undefined;
+let empty = null;
+console.log(typeof str, typeof num, typeof bln, typeof x);
+console.log(typeof empty); // object
+// num = '123' // Error: Type 'string' is not assignable to type 'number'.
 
 // STEG 4 ------------------------------------------------------------
 // TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
