@@ -1,19 +1,9 @@
 // import './kalibrering'
 
-// Dag 1: Variabler, typer och villkor. Följ README.md steg för steg.
-// Resultatet syns i Console (F12). Spara, så laddas sidan om av sig själv.
-// Röda understrykningar i VS Code är TypeScript som varnar. Håll musen över dem och läs.
-
 // STEG 1 ------------------------------------------------------------
-// TODO: skriv ut texten "Hej från Kafé Kardemumma" med console.log
 console.log('Hej från Kafé Kardemumma');
 
 // STEG 2 ------------------------------------------------------------
-// TODO: skapa konstanten kafeNamn (string) med värdet "Kafé Kardemumma"
-// TODO: skapa konstanterna prisBulle (number, 35) och prisKaffe (number, 32)
-// TODO: skapa variablerna antalBullar (2) och antalKaffe (1) med let, båda number
-// TODO: skriv ut kafeNamn
-
 const kafeNamn: string = 'Kafé Kardemumma';
 const prisBulle: number = 35;
 const prisKaffe: number = 32;
@@ -23,10 +13,6 @@ console.log(kafeNamn);
 // prisBulle = 20;
 
 // STEG 3 ------------------------------------------------------------
-// TODO: skapa en string, ett number, en boolean, en undefined och en null
-// TODO: skriv ut typeof för alla fem på en rad (tips: separera med komma)
-// TODO: prova att ge number-variabeln en text. Vad säger TypeScript?
-
 let str: string = 'some text';
 let num: number = 123;
 let bln: boolean = true;
@@ -37,15 +23,23 @@ console.log(typeof empty); // object
 // num = '123' // Error: Type 'string' is not assignable to type 'number'.
 
 // STEG 4 ------------------------------------------------------------
-// TODO: räkna ut summa = antalBullar * prisBulle + antalKaffe * prisKaffe
-// TODO: räkna ut momsDel (12 % ingår i priset): summa * 0.12 / 1.12
-// TODO: skriv ut "Summa: ... kr" och "Varav moms (12 %): ... kr"
-//       Moms ska ha två decimaler (toFixed(2))
-//       Håll musen över momsDel.toFixed(2). Vilken typ ger toFixed?
+let summa = antalBullar * prisBulle + antalKaffe * prisKaffe;
+let momsDel = (summa * 0.12) / 1.12;
+console.log(`Summa: ${summa} kr`);
+// typeof momsDel.toFixed(2) // string
+console.log(`Varav moms (12 %): ${momsDel.toFixed(2)} kr`);
 
 // STEG 5 ------------------------------------------------------------
 // TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
 // TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
+
+let ärStudent: boolean = true;
+// ärStudent = false;
+let attBetala = summa;
+if (ärStudent) {
+	attBetala = summa * 0.9;
+}
+console.log(`Att betala: ${attBetala} kr`);
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
