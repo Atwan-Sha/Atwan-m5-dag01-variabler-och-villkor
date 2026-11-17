@@ -30,21 +30,20 @@ console.log(`Summa: ${summa} kr`);
 console.log(`Varav moms (12 %): ${momsDel.toFixed(2)} kr`);
 
 // STEG 5 ------------------------------------------------------------
-// TODO: skapa ärStudent (boolean, true). Om ärStudent är true: rabatt 10 %.
-// TODO: räkna ut attBetala (number) och skriv ut "Att betala: ... kr"
-
 let ärStudent: boolean = true;
 // ärStudent = false;
 let attBetala = summa;
-if (ärStudent) {
+if (ärStudent === true) {
 	attBetala = summa * 0.9;
 }
-console.log(`Att betala: ${attBetala} kr`);
+console.log(`Att betala: ${attBetala.toFixed(2)} kr`);
 
 // STEG 6 ------------------------------------------------------------
 // TODO: skapa veckodag (string, "lördag") och klockslag (number, 15)
 // TODO: avgör om kaféet är öppet (boolean): vardagar 7–18, helger 9–16
 // TODO: skriv ut "Öppet just nu: ja" eller "Öppet just nu: nej"
+
+
 
 // STEG 7 ------------------------------------------------------------
 // TODO: se README. Gissa först, kör sedan.
